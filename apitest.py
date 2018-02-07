@@ -21,15 +21,10 @@ for i in range(5):
     j = json.dumps(d)
 r.set("payload", j)
 
-# Konvertera payload till json
-# Implementera Cognito och Oauth2 mot API GW
-# calculate runtime
-# DynamoDB sync
-# POST to API
-
-r = {'is_claimed': 'True', 'rating': 3.5}
-r = json.dumps(r)
-loaded_r = json.loads(r)
-loaded_r['rating'] #Output 3.5
-type(r) #Output str
-type(loaded_r) #Output dict
+#
+# r = {'is_claimed': 'True', 'rating': 3.5}
+# r = json.dumps(r)
+# loaded_r = json.loads(r)
+# loaded_r['rating'] #Output 3.5
+# type(r) #Output str
+# type(loaded_r) #Output dict
