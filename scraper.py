@@ -1,6 +1,7 @@
 import requests
-import bs4
+from bs4 import BeautifulSoup
 
-url = requests.get('http://www.dn.se/')
-url.close()
-print(url)
+url = requests.get('https://www.nytimes.com/books/best-sellers/')
+soup = BeautifulSoup(url.text, 'lxml')
+
+print(soup.title.text)
