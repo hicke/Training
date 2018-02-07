@@ -11,15 +11,18 @@ soup = bs.BeautifulSoup(sauce.text,'lxml')
 all_lists = soup.find_all('li')
 i = []
 
-def http_to_redis():
-    for li in all_lists:
-        i.append(li.text)
+for li in all_lists:
+    i.append(li.text)
            
-        for num in i:
-            error = num.split()
-            error_code = error[0]
-            error_text = ' '.join(map(str, error[1:]))
-            r.set(error_code, error_text, 100)
-            #print(error_code, error_text
+    for num in i:
+        error = num.split()
+        error_code = error[0]
+        error_text = ' '.join(map(str, error[1:]))
+        #r.set(error_code, error_text, 100)
+        #print(url + error_code)
 
-http_to_redis()
+
+full_url = url + error_code
+f = requests.get(full_url)
+print(f.text)
+                       
