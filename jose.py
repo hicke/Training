@@ -1,3 +1,13 @@
-from httpcodes import http_to_redis
+import json
+import bs4 as bs
+import requests
+import json
 
-http_to_redis()
+def js():
+    url = 'https://picsum.photos/list'
+    sauce = requests.get(url)
+    soup = bs.BeautifulSoup(sauce.text,'lxml')
+    json_string = json.dumps(soup.text)
+    data = json.loads(json_string)
+    return data["author"]
+js()

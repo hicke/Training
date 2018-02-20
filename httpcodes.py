@@ -19,7 +19,12 @@ def http_to_redis():
             error = num.split()
             error_code = error[0]
             error_text = ' '.join(map(str, error[1:]))
-            r.set(error_code, error_text, 100)
-            #print(error_code, error_text
+            # r.set(error_code, error_text, 100)
+            print(error_code, error_text)
 
 http_to_redis()
+
+# create api
+# List all error codes and headers
+## Create enpoints
+## attach links to main text from sub page
