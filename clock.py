@@ -6,6 +6,7 @@ import datetime
 import sys
 
 # TODO: Create number converter method into graphics
+# FIXME: this and that
 
 
 for i in range(10):
