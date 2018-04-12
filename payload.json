@@ -1,0 +1,47 @@
+{
+"requestor": {
+  "shipperName": "Komplett",
+  "requestorName": "Logistic company SE",
+  "requesterID": "LOGISTIC #1"
+},
+"deliveryIntruction": {
+  "lockOwnerId": {
+    "emailAddress": "christer@sesam.com",
+    "phoneNumber": "46733910000"
+  },
+  "deliveryAddress": {
+    "streetAddress": "Storgatan",
+    "streetNumber": "88b",
+    "postalCode": "11622",
+    "city": "Storstad",
+    "country": "SE",
+    "latitude": 57.1,
+    "logintude": 11.1
+  },
+  "deliveryItem": {
+    "id": "string",
+    "description": "string",
+    "dimension": {
+      "length": "string",
+      "width": "string",
+      "height": "string"
+    },
+    "weight": {
+      "weight": 0
+    },
+    "characteristics": {
+      "temperatureControl": {
+        "rangeMinimum": 0,
+        "rangeMaximum": 0
+      },
+      "misc": "string"
+    }
+  },
+  "deliveryTime": [
+    {
+      "from": "2017-04-11T13:00:00.000+02",
+      "to": "2017-04-11T17:00:00.000+02"
+    }
+  ]
+}
+}
